@@ -40,6 +40,14 @@ INSTALLED_APPS = (
     'articles',
     'accounts',
 )
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'udayn612@gmail.com'
+EMAIL_HOST_PASSWORD = 'Massbunk0C'
+DEFAULT_FROM_EMAIL='udayn612@gmail.com'
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -71,6 +79,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'blog.wsgi.application'
+
 
 
 # Database

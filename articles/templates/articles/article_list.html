@@ -2,6 +2,7 @@
 
 {% block content %}
     <h1>Article_list</h1>
+    <p>Logged in as <h1>{{request.user.username}}</h1></p>
     <div class="articles">
       {% for article in articles%}
       <div class="article">
